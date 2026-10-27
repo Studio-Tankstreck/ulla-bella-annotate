@@ -1,0 +1,740 @@
+{
+  "actionTitle": {
+    "message": "Ulla-Bella"
+  },
+  "activityStarting": {
+    "message": "Starting"
+  },
+  "activityThinking": {
+    "message": "Thinking"
+  },
+  "activityUsingTools": {
+    "message": "Executing tools"
+  },
+  "activityVerifying": {
+    "message": "Verifying"
+  },
+  "activityWaitingApproval": {
+    "message": "Waiting for approval"
+  },
+  "activityWorking": {
+    "message": "Working"
+  },
+  "agentChosen": {
+    "message": "Agent: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "agentNoLongerOffered": {
+    "message": "$NAME$ (no longer offered)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "agentNotChosen": {
+    "message": "Agent: not chosen — the Relay picks an authorized agent"
+  },
+  "agentOffline": {
+    "message": "$NAME$ — offline",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "commentAria": {
+    "message": "Annotation $NUMBER$ comment",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "commentClose": {
+    "message": "Close comment"
+  },
+  "commentEditInPanel": {
+    "message": "Edit in panel"
+  },
+  "commentTitle": {
+    "message": "Annotation $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "connStatusConnected": {
+    "message": "Connected"
+  },
+  "connStatusUnauthorized": {
+    "message": "Not authorized — import the site again"
+  },
+  "connStatusUnknown": {
+    "message": "Status unknown"
+  },
+  "connStatusUnreachable": {
+    "message": "Service unreachable"
+  },
+  "detailDone": {
+    "message": "$TEXT$ — ✓ Done",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailDoneSummary": {
+    "message": "$TEXT$ — ✓ Done: $SUMMARY$",
+    "placeholders": {
+      "summary": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "detailFailed": {
+    "message": "$TEXT$ — ✗ Failed",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailFailedReason": {
+    "message": "$TEXT$ — ✗ Failed: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "detailProcessing": {
+    "message": "$TEXT$ — Processing…",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailUnknownStatus": {
+    "message": "$TEXT$ — ? Result unknown",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "elementFallback": {
+    "message": "ELEMENT"
+  },
+  "elementWithText": {
+    "message": "$TYPE$ — “$TEXT$”",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      },
+      "type": {
+        "content": "$2"
+      }
+    }
+  },
+  "errAgentUnavailable": {
+    "message": "No agent is connected for this site right now."
+  },
+  "errCannotReach": {
+    "message": "Cannot reach Ulla-Bella. Check your connection and try again."
+  },
+  "errConnectFailed": {
+    "message": "Could not connect this website."
+  },
+  "errDisconnectSite": {
+    "message": "Could not disconnect this site."
+  },
+  "errEditFailed": {
+    "message": "Ulla-Bella could not make this change."
+  },
+  "errEditorUnavailable": {
+    "message": "Ulla-Bella's editor is not available right now."
+  },
+  "errElementUnmatched": {
+    "message": "Ulla-Bella could not match this element to a file."
+  },
+  "errExtensionUnavailable": {
+    "message": "The extension's background service is not available."
+  },
+  "errInvalidFile": {
+    "message": "This is not a valid Ulla-Bella website file."
+  },
+  "errInviteExpired": {
+    "message": "This invitation has expired. Ask for a new one."
+  },
+  "errInviteNotFound": {
+    "message": "This invitation is not recognized."
+  },
+  "errInviteUsed": {
+    "message": "This invitation has already been used."
+  },
+  "errNotAuthorized": {
+    "message": "This browser is not authorized for this website."
+  },
+  "errNotConfirmed": {
+    "message": "Ulla-Bella made a change but could not confirm it."
+  },
+  "errNotConnectedForEditing": {
+    "message": "This website is not connected for editing."
+  },
+  "errOutcomeUncertain": {
+    "message": "Ulla-Bella may or may not have applied your changes. Please review the page before sending again."
+  },
+  "errOutsideSite": {
+    "message": "This page is outside the connected website."
+  },
+  "errPairFailed": {
+    "message": "Ulla-Bella could not complete pairing. Please try again."
+  },
+  "errPermissionDenied": {
+    "message": "Permission to access this website was denied."
+  },
+  "errPermissionRetry": {
+    "message": "Permission to access this website was denied. You can grant it again here."
+  },
+  "errRelayPermission": {
+    "message": "Permission to reach your Relay was denied. The extension needs it to connect to your server."
+  },
+  "errRelayNotAllowed": {
+    "message": "This file points to an unrecognized Ulla-Bella service."
+  },
+  "errRequestConflict": {
+    "message": "This request conflicts with a request already in progress."
+  },
+  "errSaveAgent": {
+    "message": "Could not save the agent choice."
+  },
+  "errSaveChoice": {
+    "message": "Could not save this choice."
+  },
+  "errSaveLanguage": {
+    "message": "Could not save the language choice."
+  },
+  "errServiceUnreachable": {
+    "message": "Ulla-Bella could not reach its service. Check your connection."
+  },
+  "errSiteUnavailable": {
+    "message": "This website is not available."
+  },
+  "errTimeout": {
+    "message": "Ulla-Bella timed out waiting for a result."
+  },
+  "errToolNotSetUp": {
+    "message": "The website editing tool is not set up yet."
+  },
+  "errUnexpected": {
+    "message": "Ulla-Bella hit an unexpected error ($CODE$)",
+    "placeholders": {
+      "code": {
+        "content": "$1"
+      }
+    }
+  },
+  "errUnexpectedNoCode": {
+    "message": "Ulla-Bella hit an unexpected error"
+  },
+  "errorPrefix": {
+    "message": "Error: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "extDescription": {
+    "message": "Point at an element on your website and tell Ulla-Bella what to change."
+  },
+  "extName": {
+    "message": "Ulla-Bella"
+  },
+  "introHelp": {
+    "message": "Describe the purpose and anything that applies to every change. Then mark the details on the page."
+  },
+  "introQuestion": {
+    "message": "What do you want to do this time?"
+  },
+  "introSkip": {
+    "message": "Skip"
+  },
+  "introSkipped": {
+    "message": "Description skipped — you can add one in the panel at any time."
+  },
+  "introStart": {
+    "message": "Start annotating"
+  },
+  "introTitle": {
+    "message": "Session description"
+  },
+  "markerAria": {
+    "message": "Annotation $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "markerAriaWithText": {
+    "message": "Annotation $NUMBER$: $TEXT$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "markerLost": {
+    "message": "Element no longer on the page"
+  },
+  "markerViewAnnotation": {
+    "message": "View annotation $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "markerViewResult": {
+    "message": "View result $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelAddDescription": {
+    "message": "Add description"
+  },
+  "panelAddToQueue": {
+    "message": "Add to queue"
+  },
+  "panelCancel": {
+    "message": "Cancel"
+  },
+  "panelClearConfirm": {
+    "message": "Click again to clear"
+  },
+  "panelClearSession": {
+    "message": "Clear session"
+  },
+  "panelClearTitle": {
+    "message": "Clear this session: $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelDismiss": {
+    "message": "Dismiss"
+  },
+  "panelEditDescription": {
+    "message": "Edit description"
+  },
+  "panelExitAria": {
+    "message": "Exit annotation mode"
+  },
+  "panelInputPlaceholder": {
+    "message": "Describe the change…"
+  },
+  "panelNoDescription": {
+    "message": "No session description yet."
+  },
+  "panelReaddIt": {
+    "message": "Add it back"
+  },
+  "panelReaddThem": {
+    "message": "Add them back"
+  },
+  "panelRemoveAria": {
+    "message": "Remove annotation $NUMBER$ from this session",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelRemoveTitle": {
+    "message": "Remove this annotation from the session"
+  },
+  "panelRetry": {
+    "message": "Retry"
+  },
+  "panelSave": {
+    "message": "Save"
+  },
+  "panelSaveDescription": {
+    "message": "Save description"
+  },
+  "panelSendAll": {
+    "message": "Send all"
+  },
+  "panelSessionDescription": {
+    "message": "Session description"
+  },
+  "panelSessionLabel": {
+    "message": "Session · $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupAddSite": {
+    "message": "Add site"
+  },
+  "popupAdding": {
+    "message": "Adding…"
+  },
+  "popupAgentAutomatic": {
+    "message": "Automatic (an authorized agent)"
+  },
+  "popupAgentLabel": {
+    "message": "Agent"
+  },
+  "popupAmbiguousHint": {
+    "message": "Choose which connection this page belongs to."
+  },
+  "popupAmbiguousTitle": {
+    "message": "This page is connected more than once"
+  },
+  "popupChecking": {
+    "message": "Checking…"
+  },
+  "popupConnectionChoiceLabel": {
+    "message": "This page is served by more than one connection"
+  },
+  "popupConnectionVia": {
+    "message": "$ORIGIN$ · via $RELAY$",
+    "placeholders": {
+      "origin": {
+        "content": "$1"
+      },
+      "relay": {
+        "content": "$2"
+      }
+    }
+  },
+  "popupConnectionsTitle": {
+    "message": "Connections"
+  },
+  "popupDisconnect": {
+    "message": "Disconnect"
+  },
+  "popupDisconnectConfirm": {
+    "message": "Click again to disconnect"
+  },
+  "popupDisconnectNote": {
+    "message": "Disconnecting removes this browser's authorization for that site. Its local sessions stay on this device and are not deleted — use $CLEAR$ in the editor to remove a session's content. Other sites are not affected.",
+    "placeholders": {
+      "clear": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupEmptyConnections": {
+    "message": "No sites connected yet. Add one with an .ullabella file."
+  },
+  "popupGrantAccess": {
+    "message": "Grant access"
+  },
+  "popupNoPage": {
+    "message": "No page to edit"
+  },
+  "popupNotConnected": {
+    "message": "This page is not connected"
+  },
+  "popupNotConnectedHint": {
+    "message": "Add the site in $SETTINGS$ to edit it.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupPermissionHint": {
+    "message": "Access to this website has not been granted yet."
+  },
+  "popupSettingsButton": {
+    "message": "Settings"
+  },
+  "popupStartEditing": {
+    "message": "Start editing"
+  },
+  "progressActivity": {
+    "message": "Activity: $LABEL$",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressActivityUnavailable": {
+    "message": "Agent activity unavailable"
+  },
+  "progressElapsed": {
+    "message": "Elapsed: $DURATION$",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressLastActivity": {
+    "message": "Last agent activity: $AGO$",
+    "placeholders": {
+      "ago": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressLastChecked": {
+    "message": "Last checked: $AGO$",
+    "placeholders": {
+      "ago": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressPaused": {
+    "message": "Monitoring paused — will resume"
+  },
+  "progressSending": {
+    "message": "Sending to Hermes…"
+  },
+  "progressSubmitted_one": {
+    "message": "$COUNT$ annotation submitted",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressSubmitted_other": {
+    "message": "$COUNT$ annotations submitted",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressWaitingApproval": {
+    "message": "Waiting for approval…"
+  },
+  "progressWorking": {
+    "message": "Hermes is working…"
+  },
+  "resultDone": {
+    "message": "Done"
+  },
+  "resultDoneSummary": {
+    "message": "Done — $SUMMARY$",
+    "placeholders": {
+      "summary": {
+        "content": "$1"
+      }
+    }
+  },
+  "resultFailed": {
+    "message": "Failed"
+  },
+  "resultProcessing": {
+    "message": "Processing…"
+  },
+  "resultUnknown": {
+    "message": "Result unknown"
+  },
+  "rollupAllDone": {
+    "message": "$DONE$ of $TOTAL$ completed successfully",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "rollupPartDone": {
+    "message": "$COUNT$ completed",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartFailed": {
+    "message": "$COUNT$ failed",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartUnknown_one": {
+    "message": "$COUNT$ result unknown",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartUnknown_other": {
+    "message": "$COUNT$ results unknown",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupUnavailable_one": {
+    "message": "Results unavailable for $COUNT$ annotation",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupUnavailable_other": {
+    "message": "Results unavailable for $COUNT$ annotations",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictDesc": {
+    "message": "This session was cleared in another tab, so your session description was not saved. Nothing is put back automatically."
+  },
+  "saveConflictDescMany": {
+    "message": "This session was cleared in another tab, so your session description and $COUNT$ annotations here were not saved. Nothing is put back automatically.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictDescOne": {
+    "message": "This session was cleared in another tab, so your session description and one annotation here were not saved. Nothing is put back automatically."
+  },
+  "saveConflictGeneric": {
+    "message": "This session was cleared in another tab, so your change was not saved. Nothing is put back automatically."
+  },
+  "saveConflictMany": {
+    "message": "This session was cleared in another tab, so $COUNT$ annotations here were not saved. Nothing is put back automatically.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictOne": {
+    "message": "This session was cleared in another tab, so one annotation here was not saved. Nothing is put back automatically."
+  },
+  "saveUnsaved": {
+    "message": "This change is not saved yet."
+  },
+  "settingsLanguage": {
+    "message": "Language"
+  },
+  "settingsLanguageAuto": {
+    "message": "Automatic ($LANGUAGE$)",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
+  },
+  "settingsLanguageNote": {
+    "message": "This choice applies to Ulla-Bella's own interface. Chrome's extension name and menu entry follow your browser language."
+  },
+  "statusClearConfirm": {
+    "message": "Click again to clear this session: $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusCleared": {
+    "message": "Session cleared."
+  },
+  "statusClearedRunning": {
+    "message": "Session cleared. The request already sent keeps running in the background; its result will be discarded."
+  },
+  "statusDeletedRunning": {
+    "message": "Removed from this session. The request already sent keeps running — removing it here does not cancel it."
+  },
+  "statusNoAnnotations": {
+    "message": "No annotations left in this session."
+  },
+  "statusQueueFull": {
+    "message": "Queue is full ($COUNT$ of $MAX$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "statusResuming": {
+    "message": "Resuming…"
+  },
+  "statusSending_one": {
+    "message": "Sending $COUNT$ annotation…",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSending_other": {
+    "message": "Sending $COUNT$ annotations…",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toolbarDone": {
+    "message": "Ulla-Bella: job completed"
+  },
+  "toolbarFailed": {
+    "message": "Ulla-Bella: job failed"
+  },
+  "toolbarIdle": {
+    "message": "Ulla-Bella"
+  },
+  "toolbarPaused": {
+    "message": "Ulla-Bella: monitoring paused (will resume)"
+  },
+  "toolbarSending": {
+    "message": "Ulla-Bella: sending to Hermes…"
+  },
+  "toolbarUncertain": {
+    "message": "Ulla-Bella: result uncertain — review the page"
+  },
+  "toolbarWorking": {
+    "message": "Ulla-Bella: Hermes is working…"
+  }
+}

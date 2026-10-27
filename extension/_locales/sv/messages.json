@@ -1,0 +1,740 @@
+{
+  "actionTitle": {
+    "message": "Ulla-Bella"
+  },
+  "activityStarting": {
+    "message": "Startar"
+  },
+  "activityThinking": {
+    "message": "Tänker"
+  },
+  "activityUsingTools": {
+    "message": "Kör verktyg"
+  },
+  "activityVerifying": {
+    "message": "Verifierar"
+  },
+  "activityWaitingApproval": {
+    "message": "Väntar på godkännande"
+  },
+  "activityWorking": {
+    "message": "Arbetar"
+  },
+  "agentChosen": {
+    "message": "Agent: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "agentNoLongerOffered": {
+    "message": "$NAME$ (erbjuds inte längre)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "agentNotChosen": {
+    "message": "Agent: inte vald – Relay väljer en behörig agent"
+  },
+  "agentOffline": {
+    "message": "$NAME$ — offline",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "commentAria": {
+    "message": "Kommentar till anteckning $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "commentClose": {
+    "message": "Stäng kommentaren"
+  },
+  "commentEditInPanel": {
+    "message": "Redigera i panelen"
+  },
+  "commentTitle": {
+    "message": "Anteckning $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "connStatusConnected": {
+    "message": "Ansluten"
+  },
+  "connStatusUnauthorized": {
+    "message": "Inte behörig – importera webbplatsen igen"
+  },
+  "connStatusUnknown": {
+    "message": "Status okänd"
+  },
+  "connStatusUnreachable": {
+    "message": "Tjänsten nås inte"
+  },
+  "detailDone": {
+    "message": "$TEXT$ – ✓ Klart",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailDoneSummary": {
+    "message": "$TEXT$ – ✓ Klart: $SUMMARY$",
+    "placeholders": {
+      "summary": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "detailFailed": {
+    "message": "$TEXT$ – ✗ Misslyckades",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailFailedReason": {
+    "message": "$TEXT$ – ✗ Misslyckades: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "detailProcessing": {
+    "message": "$TEXT$ – Bearbetar…",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailUnknownStatus": {
+    "message": "$TEXT$ – ? Resultatet okänt",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "elementFallback": {
+    "message": "ELEMENT"
+  },
+  "elementWithText": {
+    "message": "$TYPE$ – “$TEXT$”",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      },
+      "type": {
+        "content": "$2"
+      }
+    }
+  },
+  "errAgentUnavailable": {
+    "message": "Ingen agent är ansluten för webbplatsen just nu."
+  },
+  "errCannotReach": {
+    "message": "Det går inte att nå Ulla-Bella. Kontrollera anslutningen och försök igen."
+  },
+  "errConnectFailed": {
+    "message": "Det gick inte att ansluta webbplatsen."
+  },
+  "errDisconnectSite": {
+    "message": "Det gick inte att koppla från webbplatsen."
+  },
+  "errEditFailed": {
+    "message": "Ulla-Bella kunde inte genomföra ändringen."
+  },
+  "errEditorUnavailable": {
+    "message": "Ulla-Bellas redigerare är inte tillgänglig just nu."
+  },
+  "errElementUnmatched": {
+    "message": "Ulla-Bella kunde inte matcha elementet mot en fil."
+  },
+  "errExtensionUnavailable": {
+    "message": "Tilläggets bakgrundstjänst är inte tillgänglig."
+  },
+  "errInvalidFile": {
+    "message": "Det här är inte en giltig Ulla-Bella-webbplatsfil."
+  },
+  "errInviteExpired": {
+    "message": "Inbjudan har gått ut. Be om en ny."
+  },
+  "errInviteNotFound": {
+    "message": "Inbjudan känns inte igen."
+  },
+  "errInviteUsed": {
+    "message": "Inbjudan har redan använts."
+  },
+  "errNotAuthorized": {
+    "message": "Den här webbläsaren är inte behörig för webbplatsen."
+  },
+  "errNotConfirmed": {
+    "message": "Ulla-Bella gjorde en ändring men kunde inte bekräfta den."
+  },
+  "errNotConnectedForEditing": {
+    "message": "Webbplatsen är inte ansluten för redigering."
+  },
+  "errOutcomeUncertain": {
+    "message": "Ulla-Bella kan ha genomfört ändringarna eller inte. Granska sidan innan du skickar igen."
+  },
+  "errOutsideSite": {
+    "message": "Sidan ligger utanför den anslutna webbplatsen."
+  },
+  "errPairFailed": {
+    "message": "Ulla-Bella kunde inte slutföra parkopplingen. Försök igen."
+  },
+  "errPermissionDenied": {
+    "message": "Åtkomst till webbplatsen nekades."
+  },
+  "errPermissionRetry": {
+    "message": "Åtkomst till webbplatsen nekades. Du kan bevilja den igen här."
+  },
+  "errRelayPermission": {
+    "message": "Behörighet att nå din Relay nekades. Tillägget behöver den för att ansluta till din server."
+  },
+  "errRelayNotAllowed": {
+    "message": "Filen pekar på en okänd Ulla-Bella-tjänst."
+  },
+  "errRequestConflict": {
+    "message": "Förfrågan krockar med en förfrågan som redan pågår."
+  },
+  "errSaveAgent": {
+    "message": "Det gick inte att spara agentvalet."
+  },
+  "errSaveChoice": {
+    "message": "Det gick inte att spara valet."
+  },
+  "errSaveLanguage": {
+    "message": "Det gick inte att spara språkvalet."
+  },
+  "errServiceUnreachable": {
+    "message": "Ulla-Bella kunde inte nå sin tjänst. Kontrollera anslutningen."
+  },
+  "errSiteUnavailable": {
+    "message": "Webbplatsen är inte tillgänglig."
+  },
+  "errTimeout": {
+    "message": "Ulla-Bella fick timeout när den väntade på ett resultat."
+  },
+  "errToolNotSetUp": {
+    "message": "Verktyget för att redigera webbplatsen är inte konfigurerat ännu."
+  },
+  "errUnexpected": {
+    "message": "Ulla-Bella stötte på ett oväntat fel ($CODE$)",
+    "placeholders": {
+      "code": {
+        "content": "$1"
+      }
+    }
+  },
+  "errUnexpectedNoCode": {
+    "message": "Ulla-Bella stötte på ett oväntat fel"
+  },
+  "errorPrefix": {
+    "message": "Fel: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "extDescription": {
+    "message": "Peka på ett element på din webbplats och berätta för Ulla-Bella vad som ska ändras."
+  },
+  "extName": {
+    "message": "Ulla-Bella"
+  },
+  "introHelp": {
+    "message": "Beskriv syftet och allt som gäller för alla ändringar. Markera sedan detaljerna på sidan."
+  },
+  "introQuestion": {
+    "message": "Vad vill du göra den här gången?"
+  },
+  "introSkip": {
+    "message": "Hoppa över"
+  },
+  "introSkipped": {
+    "message": "Beskrivning hoppades över – du kan lägga till en i panelen när som helst."
+  },
+  "introStart": {
+    "message": "Börja anteckna"
+  },
+  "introTitle": {
+    "message": "Sessionsbeskrivning"
+  },
+  "markerAria": {
+    "message": "Anteckning $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "markerAriaWithText": {
+    "message": "Anteckning $NUMBER$: $TEXT$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "markerLost": {
+    "message": "Elementet finns inte längre på sidan"
+  },
+  "markerViewAnnotation": {
+    "message": "Visa anteckning $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "markerViewResult": {
+    "message": "Visa resultat $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelAddDescription": {
+    "message": "Lägg till beskrivning"
+  },
+  "panelAddToQueue": {
+    "message": "Lägg till i kön"
+  },
+  "panelCancel": {
+    "message": "Avbryt"
+  },
+  "panelClearConfirm": {
+    "message": "Klicka igen för att rensa"
+  },
+  "panelClearSession": {
+    "message": "Rensa session"
+  },
+  "panelClearTitle": {
+    "message": "Rensa den här sessionen: $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelDismiss": {
+    "message": "Avfärda"
+  },
+  "panelEditDescription": {
+    "message": "Redigera beskrivning"
+  },
+  "panelExitAria": {
+    "message": "Lämna anteckningsläget"
+  },
+  "panelInputPlaceholder": {
+    "message": "Beskriv ändringen…"
+  },
+  "panelNoDescription": {
+    "message": "Ingen sessionsbeskrivning ännu."
+  },
+  "panelReaddIt": {
+    "message": "Lägg tillbaka den"
+  },
+  "panelReaddThem": {
+    "message": "Lägg tillbaka dem"
+  },
+  "panelRemoveAria": {
+    "message": "Ta bort anteckning $NUMBER$ från den här sessionen",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelRemoveTitle": {
+    "message": "Ta bort den här anteckningen från sessionen"
+  },
+  "panelRetry": {
+    "message": "Försök igen"
+  },
+  "panelSave": {
+    "message": "Spara"
+  },
+  "panelSaveDescription": {
+    "message": "Spara beskrivning"
+  },
+  "panelSendAll": {
+    "message": "Skicka alla"
+  },
+  "panelSessionDescription": {
+    "message": "Sessionsbeskrivning"
+  },
+  "panelSessionLabel": {
+    "message": "Session · $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupAddSite": {
+    "message": "Lägg till webbplats"
+  },
+  "popupAdding": {
+    "message": "Lägger till…"
+  },
+  "popupAgentAutomatic": {
+    "message": "Automatiskt (en behörig agent)"
+  },
+  "popupAgentLabel": {
+    "message": "Agent"
+  },
+  "popupAmbiguousHint": {
+    "message": "Välj vilken anslutning sidan hör till."
+  },
+  "popupAmbiguousTitle": {
+    "message": "Sidan är ansluten flera gånger"
+  },
+  "popupChecking": {
+    "message": "Kontrollerar…"
+  },
+  "popupConnectionChoiceLabel": {
+    "message": "Den här sidan hanteras av mer än en anslutning"
+  },
+  "popupConnectionVia": {
+    "message": "$ORIGIN$ · via $RELAY$",
+    "placeholders": {
+      "origin": {
+        "content": "$1"
+      },
+      "relay": {
+        "content": "$2"
+      }
+    }
+  },
+  "popupConnectionsTitle": {
+    "message": "Anslutningar"
+  },
+  "popupDisconnect": {
+    "message": "Koppla från"
+  },
+  "popupDisconnectConfirm": {
+    "message": "Klicka igen för att koppla från"
+  },
+  "popupDisconnectNote": {
+    "message": "Om du kopplar från tas webbläsarens behörighet för webbplatsen bort. De lokala sessionerna finns kvar på enheten och raderas inte – använd $CLEAR$ i redigeraren för att ta bort innehållet i en session. Andra webbplatser påverkas inte.",
+    "placeholders": {
+      "clear": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupEmptyConnections": {
+    "message": "Inga webbplatser anslutna ännu. Lägg till en med en .ullabella-fil."
+  },
+  "popupGrantAccess": {
+    "message": "Ge åtkomst"
+  },
+  "popupNoPage": {
+    "message": "Ingen sida att redigera"
+  },
+  "popupNotConnected": {
+    "message": "Sidan är inte ansluten"
+  },
+  "popupNotConnectedHint": {
+    "message": "Lägg till webbplatsen under $SETTINGS$ för att kunna redigera den.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupPermissionHint": {
+    "message": "Åtkomst till webbplatsen har inte beviljats ännu."
+  },
+  "popupSettingsButton": {
+    "message": "Inställningar"
+  },
+  "popupStartEditing": {
+    "message": "Börja redigera"
+  },
+  "progressActivity": {
+    "message": "Aktivitet: $LABEL$",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressActivityUnavailable": {
+    "message": "Agentens aktivitet är inte tillgänglig"
+  },
+  "progressElapsed": {
+    "message": "Förfluten tid: $DURATION$",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressLastActivity": {
+    "message": "Senaste agentaktivitet: $AGO$",
+    "placeholders": {
+      "ago": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressLastChecked": {
+    "message": "Senast kontrollerad: $AGO$",
+    "placeholders": {
+      "ago": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressPaused": {
+    "message": "Övervakningen pausad – återupptas"
+  },
+  "progressSending": {
+    "message": "Skickar till Hermes…"
+  },
+  "progressSubmitted_one": {
+    "message": "$COUNT$ anteckning skickad",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressSubmitted_other": {
+    "message": "$COUNT$ anteckningar skickade",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressWaitingApproval": {
+    "message": "Väntar på godkännande…"
+  },
+  "progressWorking": {
+    "message": "Hermes arbetar…"
+  },
+  "resultDone": {
+    "message": "Klart"
+  },
+  "resultDoneSummary": {
+    "message": "Klart – $SUMMARY$",
+    "placeholders": {
+      "summary": {
+        "content": "$1"
+      }
+    }
+  },
+  "resultFailed": {
+    "message": "Misslyckades"
+  },
+  "resultProcessing": {
+    "message": "Bearbetar…"
+  },
+  "resultUnknown": {
+    "message": "Resultatet okänt"
+  },
+  "rollupAllDone": {
+    "message": "$DONE$ av $TOTAL$ slutförda",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "rollupPartDone": {
+    "message": "$COUNT$ slutförda",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartFailed": {
+    "message": "$COUNT$ misslyckade",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartUnknown_one": {
+    "message": "$COUNT$ resultat okänt",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartUnknown_other": {
+    "message": "$COUNT$ resultat okända",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupUnavailable_one": {
+    "message": "Resultat saknas för $COUNT$ anteckning",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupUnavailable_other": {
+    "message": "Resultat saknas för $COUNT$ anteckningar",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictDesc": {
+    "message": "Sessionen rensades i en annan flik, så din sessionsbeskrivning sparades inte. Inget återställs automatiskt."
+  },
+  "saveConflictDescMany": {
+    "message": "Sessionen rensades i en annan flik, så din sessionsbeskrivning och $COUNT$ anteckningar här sparades inte. Inget återställs automatiskt.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictDescOne": {
+    "message": "Sessionen rensades i en annan flik, så din sessionsbeskrivning och en anteckning här sparades inte. Inget återställs automatiskt."
+  },
+  "saveConflictGeneric": {
+    "message": "Sessionen rensades i en annan flik, så din ändring sparades inte. Inget återställs automatiskt."
+  },
+  "saveConflictMany": {
+    "message": "Sessionen rensades i en annan flik, så $COUNT$ anteckningar här sparades inte. Inget återställs automatiskt.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictOne": {
+    "message": "Sessionen rensades i en annan flik, så en anteckning här sparades inte. Inget återställs automatiskt."
+  },
+  "saveUnsaved": {
+    "message": "Den här ändringen är inte sparad ännu."
+  },
+  "settingsLanguage": {
+    "message": "Språk"
+  },
+  "settingsLanguageAuto": {
+    "message": "Automatiskt ($LANGUAGE$)",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
+  },
+  "settingsLanguageNote": {
+    "message": "Valet gäller Ulla-Bellas eget gränssnitt. Chromes namn på tillägget och menypost följer webbläsarens språk."
+  },
+  "statusClearConfirm": {
+    "message": "Klicka igen för att rensa den här sessionen: $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusCleared": {
+    "message": "Sessionen rensad."
+  },
+  "statusClearedRunning": {
+    "message": "Sessionen rensad. Förfrågan som redan skickats fortsätter i bakgrunden; resultatet kastas."
+  },
+  "statusDeletedRunning": {
+    "message": "Borttagen från den här sessionen. Förfrågan som redan skickats fortsätter – att ta bort den här avbryter den inte."
+  },
+  "statusNoAnnotations": {
+    "message": "Inga anteckningar kvar i den här sessionen."
+  },
+  "statusQueueFull": {
+    "message": "Kön är full ($COUNT$ av $MAX$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "statusResuming": {
+    "message": "Återupptar…"
+  },
+  "statusSending_one": {
+    "message": "Skickar $COUNT$ anteckning…",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSending_other": {
+    "message": "Skickar $COUNT$ anteckningar…",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toolbarDone": {
+    "message": "Ulla-Bella: jobbet klart"
+  },
+  "toolbarFailed": {
+    "message": "Ulla-Bella: jobbet misslyckades"
+  },
+  "toolbarIdle": {
+    "message": "Ulla-Bella"
+  },
+  "toolbarPaused": {
+    "message": "Ulla-Bella: övervakningen pausad (återupptas)"
+  },
+  "toolbarSending": {
+    "message": "Ulla-Bella: skickar till Hermes…"
+  },
+  "toolbarUncertain": {
+    "message": "Ulla-Bella: resultatet är osäkert – granska sidan"
+  },
+  "toolbarWorking": {
+    "message": "Ulla-Bella: Hermes arbetar…"
+  }
+}

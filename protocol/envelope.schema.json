@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ullabella.dev/protocol/v1/envelope.schema.json",
+  "title": "Protocol Envelope (V1)",
+  "description": "Common wrapper for every Ulla-Bella Annotate protocol message. Version is carried here on every message.",
+  "type": "object",
+  "required": ["schemaVersion", "messageType", "id", "timestamp", "payload"],
+  "properties": {
+    "schemaVersion": { "const": "1" },
+    "messageType": { "enum": ["job", "result"] },
+    "id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "payload": { "type": "object" }
+  },
+  "additionalProperties": false
+}

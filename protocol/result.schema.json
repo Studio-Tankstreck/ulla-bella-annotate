@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ullabella.dev/protocol/v1/result.schema.json",
+  "title": "Result (V1)",
+  "description": "Agent-side outcome for a Job. done requires either verification.status == passed + summary (single-annotation path) or annotationResults[] (batch path); error requires an error object.",
+  "type": "object",
+  "required": ["jobId", "status"],
+  "properties": {
+    "jobId": { "type": "string" },
+    "status": { "enum": ["accepted", "working", "done", "error"] },
+    "summary": { "type": "string" },
+    "verification": { "$ref": "#/$defs/verification" },
+    "error": { "$ref": "#/$defs/error" },
+    "annotationResults": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/annotationResult" }
+    },
+    "activity": { "$ref": "#/$defs/activity" }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "done" } }, "required": ["status"] },
+      "then": {
+        "anyOf": [
+          {
+            "required": ["verification", "summary"],
+            "properties": {
+              "verification": { "properties": { "status": { "const": "passed" } } }
+            }
+          },
+          { "required": ["annotationResults"] }
+        ]
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "error" } }, "required": ["status"] },
+      "then": { "required": ["error"] }
+    }
+  ],
+  "$defs": {
+    "verification": {
+      "title": "Verification (V1)",
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["passed", "failed"] },
+        "summary": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "error": {
+      "title": "Error (V1)",
+      "type": "object",
+      "required": ["code", "message"],
+      "properties": {
+        "code": { "type": "string" },
+        "message": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "activity": {
+      "title": "Activity (V1)",
+      "description": "Live non-terminal activity snapshot on a working Result. Only safe metadata — no tool names, previews, results, or prompt content.",
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "kind": { "enum": ["starting", "working", "using_tools", "thinking", "waiting_for_approval", "verifying"] },
+        "activityAt": { "type": "string" },
+        "checkedAt": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "annotationResult": {
+      "title": "AnnotationResult (V1)",
+      "description": "Per-annotation outcome inside a Job Result, keyed by annotationId.",
+      "type": "object",
+      "required": ["annotationId", "status"],
+      "properties": {
+        "annotationId": { "type": "string" },
+        "status": { "enum": ["done", "error"] },
+        "summary": { "type": "string" },
+        "verification": { "$ref": "#/$defs/verification" },
+        "error": { "$ref": "#/$defs/error" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

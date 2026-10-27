@@ -1,0 +1,46 @@
+# --- secrets / credentials — never commit ---------------------------------
+.env
+*.env
+credentials*
+*.key
+*.pem
+*.crt
+*.pfx
+*.p12
+
+# --- exported invite files (contain real single-use invite tokens) --------
+*.ullabella
+
+# --- SQLite runtime state (contains credential hashes) — never commit -----
+ulla-bella.db
+ulla-bella.db-*
+
+# --- logs ----------------------------------------------------------------
+*.log
+logs/
+
+# --- build artifacts ------------------------------------------------------
+/bin/
+
+# --- generated release packages (scripts/package-extension.sh) -----------
+/dist/
+
+# --- local backups --------------------------------------------------------
+backup/
+
+# --- OS -------------------------------------------------------------------
+.DS_Store
+
+# --- Dropbox sidecar metadata ---------------------------------------------
+*com.dropbox.attrs
+
+# --- agent / probe scratch ------------------------------------------------
+.hermes-probe.tmp
+.hermes-probe*
+
+# --- disposable Joomla/YOOtheme test lab (DDEV + restored site) -----------
+# The web/ tree is a disposable local integration lab (Joomla 6 + YOOtheme
+# Pro + YOOtheme MCP), restored from an Akeeba backup. It is not shipped
+# source, and it is not part of a release. Create it locally if you need the
+# integration lab; it is never versioned here.
+/web/

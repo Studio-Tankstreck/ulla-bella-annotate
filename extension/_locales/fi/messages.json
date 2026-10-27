@@ -1,0 +1,740 @@
+{
+  "actionTitle": {
+    "message": "Ulla-Bella"
+  },
+  "activityStarting": {
+    "message": "Käynnistyy"
+  },
+  "activityThinking": {
+    "message": "Miettii"
+  },
+  "activityUsingTools": {
+    "message": "Suorittaa työkaluja"
+  },
+  "activityVerifying": {
+    "message": "Vahvistaa"
+  },
+  "activityWaitingApproval": {
+    "message": "Odottaa hyväksyntää"
+  },
+  "activityWorking": {
+    "message": "Työskentelee"
+  },
+  "agentChosen": {
+    "message": "Agentti: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "agentNoLongerOffered": {
+    "message": "$NAME$ (ei enää tarjolla)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "agentNotChosen": {
+    "message": "Agentti: ei valittu – Relay valitsee valtuutetun agentin"
+  },
+  "agentOffline": {
+    "message": "$NAME$ — offline",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "commentAria": {
+    "message": "Merkinnän $NUMBER$ kommentti",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "commentClose": {
+    "message": "Sulje kommentti"
+  },
+  "commentEditInPanel": {
+    "message": "Muokkaa paneelissa"
+  },
+  "commentTitle": {
+    "message": "Merkintä $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "connStatusConnected": {
+    "message": "Yhdistetty"
+  },
+  "connStatusUnauthorized": {
+    "message": "Ei valtuutettu – tuo sivusto uudelleen"
+  },
+  "connStatusUnknown": {
+    "message": "Tila tuntematon"
+  },
+  "connStatusUnreachable": {
+    "message": "Palveluun ei saada yhteyttä"
+  },
+  "detailDone": {
+    "message": "$TEXT$ – ✓ Valmis",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailDoneSummary": {
+    "message": "$TEXT$ – ✓ Valmis: $SUMMARY$",
+    "placeholders": {
+      "summary": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "detailFailed": {
+    "message": "$TEXT$ – ✗ Epäonnistui",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailFailedReason": {
+    "message": "$TEXT$ – ✗ Epäonnistui: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "detailProcessing": {
+    "message": "$TEXT$ – Käsitellään…",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailUnknownStatus": {
+    "message": "$TEXT$ – ? Tulos epävarma",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "elementFallback": {
+    "message": "ELEMENT"
+  },
+  "elementWithText": {
+    "message": "$TYPE$ – ”$TEXT$”",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      },
+      "type": {
+        "content": "$2"
+      }
+    }
+  },
+  "errAgentUnavailable": {
+    "message": "Tähän sivustoon ei ole juuri nyt yhteydessä agenttia."
+  },
+  "errCannotReach": {
+    "message": "Ulla-Bellaan ei saada yhteyttä. Tarkista yhteys ja yritä uudelleen."
+  },
+  "errConnectFailed": {
+    "message": "Sivustoa ei voitu yhdistää."
+  },
+  "errDisconnectSite": {
+    "message": "Sivuston yhteyttä ei voitu katkaista."
+  },
+  "errEditFailed": {
+    "message": "Ulla-Bella ei voinut tehdä tätä muutosta."
+  },
+  "errEditorUnavailable": {
+    "message": "Ulla-Bellan editori ei ole juuri nyt käytettävissä."
+  },
+  "errElementUnmatched": {
+    "message": "Ulla-Bella ei löytänyt tälle elementille tiedostoa."
+  },
+  "errExtensionUnavailable": {
+    "message": "Laajennuksen taustapalvelu ei ole käytettävissä."
+  },
+  "errInvalidFile": {
+    "message": "Tämä ei ole kelvollinen Ulla-Bella-sivustotiedosto."
+  },
+  "errInviteExpired": {
+    "message": "Kutsu on vanhentunut. Pyydä uusi."
+  },
+  "errInviteNotFound": {
+    "message": "Kutsua ei tunnisteta."
+  },
+  "errInviteUsed": {
+    "message": "Kutsu on jo käytetty."
+  },
+  "errNotAuthorized": {
+    "message": "Tämä selain ei ole valtuutettu tähän sivustoon."
+  },
+  "errNotConfirmed": {
+    "message": "Ulla-Bella teki muutoksen mutta ei voinut vahvistaa sitä."
+  },
+  "errNotConnectedForEditing": {
+    "message": "Tätä sivustoa ei ole yhdistetty muokkausta varten."
+  },
+  "errOutcomeUncertain": {
+    "message": "Ulla-Bella on saattanut tehdä muutokset tai olla tekemättä. Tarkista sivu ennen kuin lähetät uudelleen."
+  },
+  "errOutsideSite": {
+    "message": "Tämä sivu on yhdistetyn sivuston ulkopuolella."
+  },
+  "errPairFailed": {
+    "message": "Ulla-Bella ei voinut viimeistellä liittämistä. Yritä uudelleen."
+  },
+  "errPermissionDenied": {
+    "message": "Käyttöoikeus tähän sivustoon evättiin."
+  },
+  "errPermissionRetry": {
+    "message": "Käyttöoikeus tähän sivustoon evättiin. Voit myöntää sen uudelleen tässä."
+  },
+  "errRelayPermission": {
+    "message": "Käyttöoikeus Relay-palveluusi evättiin. Laajennus tarvitsee sen yhteyden muodostamiseen palvelimeesi."
+  },
+  "errRelayNotAllowed": {
+    "message": "Tämä tiedosto viittaa tuntemattomaan Ulla-Bella-palveluun."
+  },
+  "errRequestConflict": {
+    "message": "Tämä pyyntö on ristiriidassa jo käynnissä olevan pyynnön kanssa."
+  },
+  "errSaveAgent": {
+    "message": "Agentin valintaa ei voitu tallentaa."
+  },
+  "errSaveChoice": {
+    "message": "Valintaa ei voitu tallentaa."
+  },
+  "errSaveLanguage": {
+    "message": "Kielivalintaa ei voitu tallentaa."
+  },
+  "errServiceUnreachable": {
+    "message": "Ulla-Bella ei saanut yhteyttä palveluunsa. Tarkista yhteys."
+  },
+  "errSiteUnavailable": {
+    "message": "Tämä sivusto ei ole käytettävissä."
+  },
+  "errTimeout": {
+    "message": "Ulla-Bellan aikakatkaisu tulosta odottaessa."
+  },
+  "errToolNotSetUp": {
+    "message": "Sivuston muokkaustyökalua ei ole vielä määritetty."
+  },
+  "errUnexpected": {
+    "message": "Ulla-Bellalle tuli odottamaton virhe ($CODE$)",
+    "placeholders": {
+      "code": {
+        "content": "$1"
+      }
+    }
+  },
+  "errUnexpectedNoCode": {
+    "message": "Ulla-Bellalle tuli odottamaton virhe"
+  },
+  "errorPrefix": {
+    "message": "Virhe: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "extDescription": {
+    "message": "Osoita verkkosivusi elementtiä ja kerro Ulla-Bellalle, mitä muutetaan."
+  },
+  "extName": {
+    "message": "Ulla-Bella"
+  },
+  "introHelp": {
+    "message": "Kuvaile tarkoitus ja kaikki, mikä koskee kaikkia muutoksia. Merkitse sitten yksityiskohdat sivulle."
+  },
+  "introQuestion": {
+    "message": "Mitä haluat tehdä tällä kertaa?"
+  },
+  "introSkip": {
+    "message": "Ohita"
+  },
+  "introSkipped": {
+    "message": "Kuvaus ohitettiin – voit lisätä sen paneelissa milloin tahansa."
+  },
+  "introStart": {
+    "message": "Aloita merkintöjen teko"
+  },
+  "introTitle": {
+    "message": "Istunnon kuvaus"
+  },
+  "markerAria": {
+    "message": "Merkintä $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "markerAriaWithText": {
+    "message": "Merkintä $NUMBER$: $TEXT$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "markerLost": {
+    "message": "Elementtiä ei enää ole sivulla"
+  },
+  "markerViewAnnotation": {
+    "message": "Näytä merkintä $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "markerViewResult": {
+    "message": "Näytä tulos $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelAddDescription": {
+    "message": "Lisää kuvaus"
+  },
+  "panelAddToQueue": {
+    "message": "Lisää luetteloon"
+  },
+  "panelCancel": {
+    "message": "Peruuta"
+  },
+  "panelClearConfirm": {
+    "message": "Napsauta uudelleen tyhjentääksesi"
+  },
+  "panelClearSession": {
+    "message": "Tyhjennä istunto"
+  },
+  "panelClearTitle": {
+    "message": "Tyhjennä tämä istunto: $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelDismiss": {
+    "message": "Hylkää"
+  },
+  "panelEditDescription": {
+    "message": "Muokkaa kuvausta"
+  },
+  "panelExitAria": {
+    "message": "Poistu merkintätilasta"
+  },
+  "panelInputPlaceholder": {
+    "message": "Kuvaile muutos…"
+  },
+  "panelNoDescription": {
+    "message": "Istunnon kuvausta ei vielä ole."
+  },
+  "panelReaddIt": {
+    "message": "Lisää se takaisin"
+  },
+  "panelReaddThem": {
+    "message": "Lisää ne takaisin"
+  },
+  "panelRemoveAria": {
+    "message": "Poista merkintä $NUMBER$ tästä istunnosta",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelRemoveTitle": {
+    "message": "Poista tämä merkintä istunnosta"
+  },
+  "panelRetry": {
+    "message": "Yritä uudelleen"
+  },
+  "panelSave": {
+    "message": "Tallenna"
+  },
+  "panelSaveDescription": {
+    "message": "Tallenna kuvaus"
+  },
+  "panelSendAll": {
+    "message": "Lähetä kaikki"
+  },
+  "panelSessionDescription": {
+    "message": "Istunnon kuvaus"
+  },
+  "panelSessionLabel": {
+    "message": "Istunto · $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupAddSite": {
+    "message": "Lisää sivusto"
+  },
+  "popupAdding": {
+    "message": "Lisätään…"
+  },
+  "popupAgentAutomatic": {
+    "message": "Automaattinen (valtuutettu agentti)"
+  },
+  "popupAgentLabel": {
+    "message": "Agentti"
+  },
+  "popupAmbiguousHint": {
+    "message": "Valitse, mihin yhteyteen tämä sivu kuuluu."
+  },
+  "popupAmbiguousTitle": {
+    "message": "Sivu on yhdistetty useammin kuin kerran"
+  },
+  "popupChecking": {
+    "message": "Tarkistetaan…"
+  },
+  "popupConnectionChoiceLabel": {
+    "message": "Tätä sivua palvelee useampi kuin yksi yhteys"
+  },
+  "popupConnectionVia": {
+    "message": "$ORIGIN$ · välityksellä $RELAY$",
+    "placeholders": {
+      "origin": {
+        "content": "$1"
+      },
+      "relay": {
+        "content": "$2"
+      }
+    }
+  },
+  "popupConnectionsTitle": {
+    "message": "Yhteydet"
+  },
+  "popupDisconnect": {
+    "message": "Katkaise yhteys"
+  },
+  "popupDisconnectConfirm": {
+    "message": "Napsauta uudelleen katkaistaksesi"
+  },
+  "popupDisconnectNote": {
+    "message": "Yhteyden katkaiseminen poistaa selaimen käyttöoikeuden sivustoon. Paikalliset istunnot jäävät tälle laitteelle eikä niitä poisteta – poista istunnon sisältö editorissa kohdasta $CLEAR$. Muihin sivustoihin tämä ei vaikuta.",
+    "placeholders": {
+      "clear": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupEmptyConnections": {
+    "message": "Sivustoja ei ole vielä yhdistetty. Lisää sellainen .ullabella-tiedostolla."
+  },
+  "popupGrantAccess": {
+    "message": "Myönnä käyttöoikeus"
+  },
+  "popupNoPage": {
+    "message": "Ei muokattavaa sivua"
+  },
+  "popupNotConnected": {
+    "message": "Sivua ei ole yhdistetty"
+  },
+  "popupNotConnectedHint": {
+    "message": "Lisää sivusto kohdassa $SETTINGS$, niin voit muokata sitä.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupPermissionHint": {
+    "message": "Käyttöoikeutta tähän sivustoon ei ole vielä myönnetty."
+  },
+  "popupSettingsButton": {
+    "message": "Asetukset"
+  },
+  "popupStartEditing": {
+    "message": "Aloita muokkaus"
+  },
+  "progressActivity": {
+    "message": "Toiminta: $LABEL$",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressActivityUnavailable": {
+    "message": "Agentin toimintaa ei ole saatavilla"
+  },
+  "progressElapsed": {
+    "message": "Kulunut: $DURATION$",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressLastActivity": {
+    "message": "Viimeisin agentin toiminta: $AGO$",
+    "placeholders": {
+      "ago": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressLastChecked": {
+    "message": "Viimeksi tarkistettu: $AGO$",
+    "placeholders": {
+      "ago": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressPaused": {
+    "message": "Seuranta keskeytetty – jatkuu"
+  },
+  "progressSending": {
+    "message": "Lähetetään Hermekselle…"
+  },
+  "progressSubmitted_one": {
+    "message": "$COUNT$ merkintä lähetetty",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressSubmitted_other": {
+    "message": "$COUNT$ merkintää lähetetty",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressWaitingApproval": {
+    "message": "Odottaa hyväksyntää…"
+  },
+  "progressWorking": {
+    "message": "Hermes työskentelee…"
+  },
+  "resultDone": {
+    "message": "Valmis"
+  },
+  "resultDoneSummary": {
+    "message": "Valmis – $SUMMARY$",
+    "placeholders": {
+      "summary": {
+        "content": "$1"
+      }
+    }
+  },
+  "resultFailed": {
+    "message": "Epäonnistui"
+  },
+  "resultProcessing": {
+    "message": "Käsitellään…"
+  },
+  "resultUnknown": {
+    "message": "Tulos epävarma"
+  },
+  "rollupAllDone": {
+    "message": "$DONE$ / $TOTAL$ valmistui",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "rollupPartDone": {
+    "message": "$COUNT$ valmistui",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartFailed": {
+    "message": "$COUNT$ epäonnistui",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartUnknown_one": {
+    "message": "$COUNT$ tulos epävarma",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartUnknown_other": {
+    "message": "$COUNT$ tulosta epävarma",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupUnavailable_one": {
+    "message": "Tulokset puuttuvat $COUNT$ merkinnältä",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupUnavailable_other": {
+    "message": "Tulokset puuttuvat $COUNT$ merkinnältä",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictDesc": {
+    "message": "Istunto tyhjennettiin toisessa välilehdessä, joten istunnon kuvaustasi ei tallennettu. Mitään ei palauteta automaattisesti."
+  },
+  "saveConflictDescMany": {
+    "message": "Istunto tyhjennettiin toisessa välilehdessä, joten istunnon kuvaustasi ja $COUNT$ merkintää täällä ei tallennettu. Mitään ei palauteta automaattisesti.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictDescOne": {
+    "message": "Istunto tyhjennettiin toisessa välilehdessä, joten istunnon kuvaustasi ja yhtä merkintää täällä ei tallennettu. Mitään ei palauteta automaattisesti."
+  },
+  "saveConflictGeneric": {
+    "message": "Istunto tyhjennettiin toisessa välilehdessä, joten muutostasi ei tallennettu. Mitään ei palauteta automaattisesti."
+  },
+  "saveConflictMany": {
+    "message": "Istunto tyhjennettiin toisessa välilehdessä, joten $COUNT$ merkintää täällä jäi tallentamatta. Mitään ei palauteta automaattisesti.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictOne": {
+    "message": "Istunto tyhjennettiin toisessa välilehdessä, joten yhtä merkintää täällä ei tallennettu. Mitään ei palauteta automaattisesti."
+  },
+  "saveUnsaved": {
+    "message": "Tätä muutosta ei ole vielä tallennettu."
+  },
+  "settingsLanguage": {
+    "message": "Kieli"
+  },
+  "settingsLanguageAuto": {
+    "message": "Automaattinen ($LANGUAGE$)",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
+  },
+  "settingsLanguageNote": {
+    "message": "Valinta koskee Ulla-Bellan omaa käyttöliittymää. Chromen laajennuksen nimi ja valikkokohta noudattavat selaimen kieltä."
+  },
+  "statusClearConfirm": {
+    "message": "Napsauta uudelleen tyhjentääksesi tämän istunnon: $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusCleared": {
+    "message": "Istunto tyhjennetty."
+  },
+  "statusClearedRunning": {
+    "message": "Istunto tyhjennetty. Jo lähetetty pyyntö jatkuu taustalla; sen tulos hylätään."
+  },
+  "statusDeletedRunning": {
+    "message": "Poistettu tästä istunnosta. Jo lähetetty pyyntö jatkuu – täältä poistaminen ei peruuta sitä."
+  },
+  "statusNoAnnotations": {
+    "message": "Tässä istunnossa ei ole enää merkintöjä."
+  },
+  "statusQueueFull": {
+    "message": "Luettelo on täynnä ($COUNT$ / $MAX$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "statusResuming": {
+    "message": "Jatketaan…"
+  },
+  "statusSending_one": {
+    "message": "Lähetetään $COUNT$ merkintä…",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSending_other": {
+    "message": "Lähetetään $COUNT$ merkintää…",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toolbarDone": {
+    "message": "Ulla-Bella: tehtävä valmis"
+  },
+  "toolbarFailed": {
+    "message": "Ulla-Bella: tehtävä epäonnistui"
+  },
+  "toolbarIdle": {
+    "message": "Ulla-Bella"
+  },
+  "toolbarPaused": {
+    "message": "Ulla-Bella: seuranta keskeytetty (jatkuu)"
+  },
+  "toolbarSending": {
+    "message": "Ulla-Bella: lähetetään Hermekselle…"
+  },
+  "toolbarUncertain": {
+    "message": "Ulla-Bella: tulos epävarma – tarkista sivu"
+  },
+  "toolbarWorking": {
+    "message": "Ulla-Bella: Hermes työskentelee…"
+  }
+}

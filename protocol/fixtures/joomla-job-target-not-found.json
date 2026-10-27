@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1",
+  "messageType": "job",
+  "id": "msg_09b_fail_001",
+  "timestamp": "2026-10-07T16:30:00Z",
+  "payload": {
+    "jobId": "job_09b_fail_001",
+    "siteId": "site_ub_joomla",
+    "deviceId": "dev_01j7xa1b3",
+    "createdAt": "2026-10-07T16:30:00Z",
+    "annotations": [
+      {
+        "annotationId": "ann_09b_fail_001",
+        "instruction": "Change this heading to Definitely Not Real",
+        "target": {
+          "url": "https://joomla.example.test/",
+          "pageTitle": "Hem",
+          "elementType": "h2",
+          "visibleText": "Heading That Does Not Exist",
+          "selector": "h2",
+          "domPath": "html > body[1] > h2[9]",
+          "rect": { "x": 0, "y": 120, "width": 640, "height": 48 }
+        },
+        "context": { "nearbyText": "" }
+      }
+    ]
+  }
+}

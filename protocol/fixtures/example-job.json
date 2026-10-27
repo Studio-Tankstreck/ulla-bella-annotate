@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1",
+  "messageType": "job",
+  "id": "msg_01j7xb4c5",
+  "timestamp": "2026-10-07T08:00:01Z",
+  "payload": {
+    "jobId": "job_01j7xb4c5",
+    "siteId": "site_01j7x9k2m",
+    "deviceId": "dev_01j7xa1b3",
+    "createdAt": "2026-10-07T08:00:01Z",
+    "annotations": [
+      {
+        "annotationId": "ann_01j7xb4c6",
+        "instruction": "Change this heading to Our Services",
+        "target": {
+          "url": "https://example.test/services",
+          "pageTitle": "Tjänster — Example Test",
+          "elementType": "h1",
+          "visibleText": "Tjänster",
+          "selector": "h1.hero-title",
+          "rect": { "x": 0, "y": 120, "width": 640, "height": 48 }
+        },
+        "context": { "nearbyText": "Vi hjälper företag att växa." }
+      }
+    ]
+  }
+}

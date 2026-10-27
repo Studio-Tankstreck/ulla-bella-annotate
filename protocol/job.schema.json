@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ullabella.dev/protocol/v1/job.schema.json",
+  "title": "Job (V1)",
+  "description": "The unit of work: one Device, one Site, one or more Annotations. Target.url is the only required targeting field; every other target field is a best-effort hint.",
+  "type": "object",
+  "required": ["jobId", "siteId", "deviceId", "annotations", "createdAt"],
+  "properties": {
+    "jobId": { "type": "string" },
+    "siteId": { "type": "string" },
+    "deviceId": { "type": "string" },
+    "createdAt": { "type": "string" },
+    "annotations": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/annotation" }
+    },
+    "context": { "$ref": "#/$defs/context" },
+    "agentId": {
+      "type": "string",
+      "maxLength": 128,
+      "description": "Optional: pin this round to one authorized agent. The Relay validates it against agent_sites; a job without it keeps the older behaviour."
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "context": {
+      "title": "Job context (V1)",
+      "description": "Optional, job-wide context for one session. It applies to every annotation and is never a task of its own. Absent on jobs that predate it.",
+      "type": "object",
+      "properties": {
+        "session": { "type": "string", "maxLength": 2000 }
+      },
+      "additionalProperties": false
+    },
+    "annotation": {
+      "title": "Annotation (V1)",
+      "description": "The user is referring to this thing on this page and wants this change.",
+      "type": "object",
+      "required": ["annotationId", "instruction", "target"],
+      "properties": {
+        "annotationId": { "type": "string" },
+        "instruction": { "type": "string" },
+        "target": { "$ref": "#/$defs/target" },
+        "context": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "target": {
+      "title": "Target (V1)",
+      "description": "url is the durable identity. selector, domPath and rect are hints only — never the sole source of truth.",
+      "type": "object",
+      "required": ["url"],
+      "properties": {
+        "url": { "type": "string" },
+        "pageTitle": { "type": "string" },
+        "elementType": { "type": "string" },
+        "visibleText": { "type": "string" },
+        "selector": { "type": "string" },
+        "domPath": { "type": "string" },
+        "rect": { "type": "object" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

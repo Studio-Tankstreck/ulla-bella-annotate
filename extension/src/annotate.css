@@ -1,0 +1,709 @@
+/* Ulla-Bella Extension — namespaced UI. Every selector is prefixed .ullabella-
+   to avoid colliding with the host page. No global element styles. */
+
+.ullabella-ui {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #1f2937;
+}
+
+/* Highlight overlay for the hovered element. Position/size set inline. */
+.ullabella-highlight {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2147483000;
+  border: 2px solid #4f46e5;
+  border-radius: 3px;
+  background: rgba(79, 70, 229, 0.12);
+  box-sizing: border-box;
+}
+
+/* Numbered annotation markers (1–8). Position set inline. */
+.ullabella-marker {
+  position: absolute;
+  z-index: 2147483002;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.ullabella-marker.ullabella-lost {
+  background: #9ca3af;
+  border: 1px dashed #6b7280;
+  color: #374151;
+}
+
+/* Floating panel host: fixed, right-aligned, non-interactive until open. */
+.ullabella-panel-host {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 2147483001;
+  pointer-events: none;
+}
+
+.ullabella-panel {
+  pointer-events: auto;
+  width: 320px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  display: none;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.ullabella-panel-host.ullabella-open .ullabella-panel {
+  display: block;
+}
+
+.ullabella-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ullabella-brand {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.ullabella-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.ullabella-close {
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0 4px;
+}
+
+.ullabella-summary {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+
+/* Queue list */
+.ullabella-list {
+  max-height: 180px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ullabella-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.ullabella-item.ullabella-editing {
+  border-color: #4f46e5;
+  background: #eef2ff;
+}
+
+.ullabella-item-num {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+}
+
+.ullabella-item-text {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ullabella-item-del {
+  flex: 0 0 auto;
+  border: 0;
+  background: transparent;
+  color: #9ca3af;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.ullabella-item-del:hover {
+  color: #dc2626;
+}
+
+.ullabella-input {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 72px;
+  resize: vertical;
+  padding: 8px;
+  font: inherit;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+.ullabella-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.ullabella-actions button {
+  font: inherit;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  /* A translated label can be longer than the 320px panel fits on one row:
+     wrap the label instead of clipping it or shrinking the text out of view. */
+  max-width: 100%;
+  white-space: normal;
+}
+
+.ullabella-cancel {
+  background: transparent;
+  color: #1f2937;
+}
+
+.ullabella-add {
+  background: transparent;
+  color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+.ullabella-send {
+  background: #4f46e5;
+  color: #ffffff;
+  border-color: #4f46e5;
+}
+
+.ullabella-add:disabled,
+.ullabella-send:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Session identity + Clear session. The label names the connected site and the
+   page path, so the destructive action can never be mistaken for another
+   session's. */
+.ullabella-session {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.ullabella-session-label {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ullabella-clear {
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  color: #dc2626;
+  border: 1px solid #fca5a5;
+}
+
+.ullabella-clear:hover:not(:disabled) {
+  background: #fef2f2;
+}
+
+.ullabella-clear:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.ullabella-status {
+  margin-top: 10px;
+  font-size: 13px;
+  min-height: 18px;
+}
+
+/* --- session description: its own field, one column -----------------------
+   The description used to sit BESIDE the Edit button, which turned a 320px panel
+   into a ~170px text column. It is now a card of its own (same surface, radius
+   and padding as the "Hermes is working" field), with the text on the full inner
+   width and the button on its own row underneath. The text scrolls vertically
+   after ~4 lines instead of being squeezed. */
+.ullabella-desc {
+  margin: 0 0 12px;
+  padding: 10px;
+  background: #f3f4f6;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.ullabella-desc-title {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.ullabella-desc-body {
+  min-width: 0;
+}
+
+.ullabella-desc-text {
+  /* Reading height of a handful of lines; longer text scrolls vertically, it
+     never becomes a narrow column. The scrollbar is always painted (custom
+     scrollbar styling below), so truncation is visible instead of silent. */
+  max-height: 96px;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  line-height: 1.45;
+  color: #374151;
+}
+
+/* Deliberately NOT `scrollbar-width`/`scrollbar-color`: in Chrome those disable
+   the legacy pseudo-elements below and keep the overlay scrollbar, which only
+   appears while scrolling and takes no space — the truncation would be silent. */
+.ullabella-desc-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ullabella-desc-text::-webkit-scrollbar-thumb {
+  background: #c3c8d0;
+  border-radius: 4px;
+}
+
+.ullabella-desc-text::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ullabella-desc-text.ullabella-muted {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* Only applied when the text really is taller than its reading height (set from
+   content.js): the last visible line fades, so nothing is silently cut off. */
+.ullabella-desc-text.ullabella-desc-clipped {
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 18px), transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 18px), transparent 100%);
+}
+
+.ullabella-desc-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+
+.ullabella-desc-edit {
+  font: inherit;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #4f46e5;
+  border: 1px solid #c7d2fe;
+}
+
+.ullabella-desc-input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 76px;
+  max-height: 220px;
+  resize: vertical;
+  padding: 8px;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.45;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+.ullabella-desc-editor-actions {
+  margin-top: 8px;
+}
+
+/* --- save status (visible, actionable) --- */
+.ullabella-savebar {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  color: #92400e;
+  font-size: 12px;
+}
+
+.ullabella-savebar[hidden] {
+  display: none;
+}
+
+.ullabella-savebar.ullabella-savebar-conflict {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #991b1b;
+}
+
+.ullabella-savebar-lost {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  max-height: 90px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.ullabella-savebar-lost[hidden] {
+  display: none;
+}
+
+/* The refused session description: the user's own text, readable and copyable. */
+.ullabella-savebar-desc {
+  margin-top: 6px;
+  padding: 6px 8px;
+  background: #ffffff;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  max-height: 90px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+
+.ullabella-savebar-desc[hidden] {
+  display: none;
+}
+
+.ullabella-savebar .ullabella-actions {
+  margin-top: 6px;
+}
+
+.ullabella-savebar .ullabella-actions button {
+  font-size: 12px;
+  padding: 4px 10px;
+}
+
+/* --- first step: session description --- */
+.ullabella-intro-host {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483003;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px 16px 16px;
+  background: rgba(17, 24, 39, 0.35);
+}
+
+.ullabella-intro-card {
+  width: 420px;
+  max-width: 100%;
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.ullabella-intro-title {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.ullabella-intro-question {
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ullabella-intro-input {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 96px;
+  resize: vertical;
+  padding: 8px;
+  font: inherit;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+.ullabella-intro-help {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.ullabella-intro-card .ullabella-actions button {
+  font: inherit;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+}
+
+.ullabella-intro-skip {
+  background: transparent;
+  color: #1f2937;
+}
+
+.ullabella-intro-start {
+  background: #4f46e5;
+  color: #ffffff;
+  border-color: #4f46e5;
+}
+
+/* Which Hermes agent receives this session's changes (etapp 3). */
+.ullabella-agent {
+  margin: -4px 0 10px;
+  font-size: 12px;
+  color: #6b7280;
+  overflow-wrap: anywhere;
+}
+
+/* --- marker comment popover --- */
+.ullabella-comment {
+  position: fixed;
+  z-index: 2147483004;
+  width: 280px;
+  max-width: calc(100vw - 16px);
+  /* The whole panel is capped at the viewport: head (with the close button) and
+     the actions stay visible, the body scrolls. */
+  max-height: calc(100vh - 16px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 10px 12px;
+  box-sizing: border-box;
+}
+
+.ullabella-comment-head {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.ullabella-comment-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+.ullabella-comment-close {
+  border: 0;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0 2px;
+}
+
+.ullabella-comment-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  font-size: 13px;
+  color: #1f2937;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.ullabella-comment-result {
+  flex: 0 0 auto;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.ullabella-comment-result[hidden] {
+  display: none;
+}
+
+.ullabella-comment-actions {
+  flex: 0 0 auto;
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ullabella-comment-edit {
+  font: inherit;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  color: #4f46e5;
+  border: 1px solid #c7d2fe;
+}
+
+.ullabella-marker:focus-visible {
+  outline: 2px solid #1f2937;
+  outline-offset: 2px;
+}
+
+.ullabella-status.ullabella-done {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.ullabella-status.ullabella-error {
+  color: #dc2626;
+}
+
+.ullabella-status.ullabella-working {
+  color: #6b7280;
+}
+
+
+/* --- per-annotation result states --- */
+.ullabella-marker.ullabella-done { background: #16a34a; }
+.ullabella-marker.ullabella-error { background: #dc2626; }
+.ullabella-marker.ullabella-unknown { background: #9ca3af; }
+.ullabella-marker.ullabella-processing { animation: ullabella-pulse 1.2s infinite; }
+
+@keyframes ullabella-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+.ullabella-item-result {
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 14px;
+  text-align: center;
+}
+.ullabella-item-result.ullabella-done { color: #16a34a; }
+.ullabella-item-result.ullabella-error { color: #dc2626; }
+.ullabella-item-result.ullabella-unknown { color: #9ca3af; }
+.ullabella-item-result.ullabella-processing { color: #6366f1; }
+
+/* --- progress indicator (Hermes is working) --- */
+.ullabella-progress {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  background: #f3f4f6;
+  border-radius: 6px;
+}
+
+.ullabella-progress[hidden] {
+  display: none;
+}
+
+.ullabella-spinner {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  border: 2px solid #d1d5db;
+  border-top-color: #4f46e5;
+  border-radius: 50%;
+  animation: ullabella-spin 0.8s linear infinite;
+}
+
+@keyframes ullabella-spin {
+  to { transform: rotate(360deg); }
+}
+
+.ullabella-progress-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.ullabella-progress-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 2px;
+}
+
+.ullabella-progress-activity {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4f46e5;
+  margin-bottom: 2px;
+}
+
+.ullabella-progress-agent {
+  color: #374151;
+}
+
+.ullabella-progress-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  color: #6b7280;
+}

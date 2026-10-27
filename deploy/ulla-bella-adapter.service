@@ -1,0 +1,29 @@
+[Unit]
+Description=Ulla-Bella Adapter (Hermes agent service)
+Documentation=https://hermes-agent.nousresearch.com/docs
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=ullabella
+Group=ullabella
+# Explicit config path; secrets come from the protected EnvironmentFile below.
+ExecStart=/usr/local/bin/ulla-bella-adapter --config /etc/ulla-bella/adapter.yaml
+EnvironmentFile=/etc/ulla-bella/adapter.env
+# Reconnect after Relay restart / network blips / abnormal exits. The adapter
+# also retries internally with backoff, so this only catches hard crashes.
+Restart=on-failure
+RestartSec=5
+# Reasonable hardening. Kept conservative so local Hermes / MCP reachability
+# (outbound HTTP + WS) and journald logging keep working.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+
+[Install]
+WantedBy=multi-user.target

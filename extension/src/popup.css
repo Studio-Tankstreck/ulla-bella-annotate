@@ -1,0 +1,230 @@
+:root {
+  --ub-fg: #1a1a1a;
+  --ub-muted: #6b7280;
+  --ub-accent: #7c3aed;
+  --ub-border: #e5e7eb;
+  --ub-card: #ffffff;
+  --ub-ok: #15803d;
+  --ub-err: #b91c1c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  width: 320px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: var(--ub-fg);
+  background: var(--ub-card);
+}
+
+.ub-popup-head {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--ub-border);
+}
+
+.ub-popup-brand {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ub-popup-body {
+  padding: 14px 16px 16px;
+}
+
+.ub-popup-section {
+  margin-bottom: 14px;
+}
+
+.ub-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ub-muted);
+  margin-bottom: 4px;
+}
+
+.ub-status {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.ub-muted {
+  color: var(--ub-muted);
+  font-size: 13px;
+}
+
+.ub-ok { color: var(--ub-ok); }
+
+.ub-popup-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.ub-btn {
+  padding: 9px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background: var(--ub-accent);
+  color: #ffffff;
+}
+
+.ub-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.ub-btn-secondary {
+  background: transparent;
+  color: var(--ub-fg);
+  border: 1px solid var(--ub-border);
+}
+
+.ub-error {
+  margin-top: 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: var(--ub-err);
+  font-size: 13px;
+}
+
+/* --- etapp 3: settings --- */
+.ub-popup-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ub-link {
+  border: 0;
+  background: transparent;
+  color: var(--ub-accent);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+.ub-warn { color: #b45309; }
+
+.ub-hint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #b45309;
+}
+
+.ub-choice {
+  margin-top: 10px;
+}
+
+.ub-choice select,
+.ub-lang select,
+.ub-conn-agent select {
+  width: 100%;
+  font: inherit;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--ub-border);
+  background: var(--ub-card);
+  color: var(--ub-fg);
+}
+
+/* Language choice: label, selector, and one wrapping note. German and Finnish
+   translations of the note are longer than the English one, so it wraps. */
+.ub-lang {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.ub-lang .ub-label {
+  display: block;
+  margin-bottom: 0;
+}
+
+.ub-lang .ub-note {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.ub-settings {
+  border-top: 1px solid var(--ub-border);
+  padding-top: 12px;
+  margin-top: 6px;
+}
+
+.ub-settings-title {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ub-muted);
+  margin: 0 0 10px;
+}
+
+.ub-conn {
+  border: 1px solid var(--ub-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+
+.ub-conn-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ub-conn-name { font-weight: 600; font-size: 14px; }
+
+.ub-conn-status { font-size: 12px; }
+
+.ub-conn-meta {
+  font-size: 12px;
+  color: var(--ub-muted);
+  margin-top: 2px;
+  overflow-wrap: anywhere;
+}
+
+.ub-conn-agent {
+  display: block;
+  margin-top: 10px;
+}
+
+.ub-conn-agent .ub-label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.ub-conn-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.ub-btn-danger {
+  background: transparent;
+  color: var(--ub-err);
+  border: 1px solid #fca5a5;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ub-note {
+  margin: 12px 0 0;
+  font-size: 12px;
+  color: var(--ub-muted);
+  line-height: 1.5;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ulla-Bella</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="ub-popup-head">
+    <span class="ub-popup-brand">Ulla-Bella</span>
+    <button id="toggle-settings" type="button" class="ub-link" aria-expanded="false" data-i18n="popupSettingsButton">Settings</button>
+  </header>
+
+  <main class="ub-popup-body">
+    <!-- Current page: which site and which agent this tab's changes go to. -->
+    <section class="ub-popup-section" id="page-section">
+      <div id="page-site" class="ub-status" data-i18n="popupChecking">Checking&hellip;</div>
+      <div id="page-agent" class="ub-muted"></div>
+      <div id="page-hint" class="ub-hint" hidden></div>
+
+      <div id="page-choice" class="ub-choice" hidden>
+        <label class="ub-label" for="connection-choice" data-i18n="popupConnectionChoiceLabel">This page is served by more than one connection</label>
+        <select id="connection-choice"></select>
+      </div>
+
+      <div class="ub-popup-actions">
+        <button id="grant-access" type="button" class="ub-btn" hidden data-i18n="popupGrantAccess">Grant access</button>
+        <button id="start-editing" type="button" class="ub-btn ub-btn-secondary" hidden data-i18n="popupStartEditing">Start editing</button>
+      </div>
+    </section>
+
+    <!-- Settings: every connection, its agent, its status. -->
+    <section class="ub-settings" id="settings" hidden>
+      <!-- The language choice is its own field: "Automatic" follows the browser,
+           the nine supported languages are listed in their own language. -->
+      <div class="ub-lang">
+        <label class="ub-label" for="language-choice" data-i18n="settingsLanguage">Language</label>
+        <select id="language-choice"></select>
+        <p class="ub-note" data-i18n="settingsLanguageNote">
+          This choice applies to Ulla-Bella's own interface. Chrome's extension name
+          and menu entry follow your browser language.
+        </p>
+      </div>
+
+      <h2 class="ub-settings-title" data-i18n="popupConnectionsTitle">Connections</h2>
+      <div id="connection-list"></div>
+      <div class="ub-popup-actions">
+        <button id="import" type="button" class="ub-btn" data-i18n="popupAddSite">Add site</button>
+      </div>
+      <p class="ub-note" id="disconnect-note"></p>
+    </section>
+
+    <div id="error" class="ub-error" hidden></div>
+  </main>
+
+  <input type="file" id="file" accept=".ullabella,application/json" hidden />
+
+  <script src="i18n-messages.js"></script>
+  <script src="i18n.js"></script>
+  <script src="lib.js"></script>
+  <script src="pair.js"></script>
+  <script src="relay-policy.js"></script>
+  <script src="connections.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

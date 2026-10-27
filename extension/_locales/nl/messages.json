@@ -1,0 +1,740 @@
+{
+  "actionTitle": {
+    "message": "Ulla-Bella"
+  },
+  "activityStarting": {
+    "message": "Starten"
+  },
+  "activityThinking": {
+    "message": "Denkt na"
+  },
+  "activityUsingTools": {
+    "message": "Voert hulpmiddelen uit"
+  },
+  "activityVerifying": {
+    "message": "Controleert"
+  },
+  "activityWaitingApproval": {
+    "message": "Wacht op goedkeuring"
+  },
+  "activityWorking": {
+    "message": "Bezig"
+  },
+  "agentChosen": {
+    "message": "Agent: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "agentNoLongerOffered": {
+    "message": "$NAME$ (niet meer aangeboden)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "agentNotChosen": {
+    "message": "Agent: niet gekozen — de Relay kiest een gemachtigde agent"
+  },
+  "agentOffline": {
+    "message": "$NAME$ — offline",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "commentAria": {
+    "message": "Commentaar bij aantekening $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "commentClose": {
+    "message": "Commentaar sluiten"
+  },
+  "commentEditInPanel": {
+    "message": "Bewerken in paneel"
+  },
+  "commentTitle": {
+    "message": "Aantekening $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "connStatusConnected": {
+    "message": "Verbonden"
+  },
+  "connStatusUnauthorized": {
+    "message": "Niet gemachtigd — importeer de site opnieuw"
+  },
+  "connStatusUnknown": {
+    "message": "Status onbekend"
+  },
+  "connStatusUnreachable": {
+    "message": "Dienst niet bereikbaar"
+  },
+  "detailDone": {
+    "message": "$TEXT$ — ✓ Klaar",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailDoneSummary": {
+    "message": "$TEXT$ — ✓ Klaar: $SUMMARY$",
+    "placeholders": {
+      "summary": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "detailFailed": {
+    "message": "$TEXT$ — ✗ Mislukt",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailFailedReason": {
+    "message": "$TEXT$ — ✗ Mislukt: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "detailProcessing": {
+    "message": "$TEXT$ — Wordt verwerkt…",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "detailUnknownStatus": {
+    "message": "$TEXT$ — ? Resultaat onbekend",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "elementFallback": {
+    "message": "ELEMENT"
+  },
+  "elementWithText": {
+    "message": "$TYPE$ — “$TEXT$”",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      },
+      "type": {
+        "content": "$2"
+      }
+    }
+  },
+  "errAgentUnavailable": {
+    "message": "Er is nu geen agent verbonden voor deze site."
+  },
+  "errCannotReach": {
+    "message": "Ulla-Bella is niet bereikbaar. Controleer je verbinding en probeer het opnieuw."
+  },
+  "errConnectFailed": {
+    "message": "Deze website kon niet worden verbonden."
+  },
+  "errDisconnectSite": {
+    "message": "Deze site kon niet worden losgekoppeld."
+  },
+  "errEditFailed": {
+    "message": "Ulla-Bella kon deze wijziging niet doorvoeren."
+  },
+  "errEditorUnavailable": {
+    "message": "De editor van Ulla-Bella is nu niet beschikbaar."
+  },
+  "errElementUnmatched": {
+    "message": "Ulla-Bella kon dit element niet aan een bestand koppelen."
+  },
+  "errExtensionUnavailable": {
+    "message": "De achtergronddienst van de extensie is niet beschikbaar."
+  },
+  "errInvalidFile": {
+    "message": "Dit is geen geldig Ulla-Bella-websitebestand."
+  },
+  "errInviteExpired": {
+    "message": "Deze uitnodiging is verlopen. Vraag om een nieuwe."
+  },
+  "errInviteNotFound": {
+    "message": "Deze uitnodiging is niet bekend."
+  },
+  "errInviteUsed": {
+    "message": "Deze uitnodiging is al gebruikt."
+  },
+  "errNotAuthorized": {
+    "message": "Deze browser is niet gemachtigd voor deze website."
+  },
+  "errNotConfirmed": {
+    "message": "Ulla-Bella heeft iets gewijzigd maar kon dat niet bevestigen."
+  },
+  "errNotConnectedForEditing": {
+    "message": "Deze website is niet verbonden voor bewerken."
+  },
+  "errOutcomeUncertain": {
+    "message": "Het is mogelijk dat Ulla-Bella je wijzigingen heeft doorgevoerd, maar ook niet. Controleer de pagina voordat je opnieuw verzendt."
+  },
+  "errOutsideSite": {
+    "message": "Deze pagina valt buiten de verbonden website."
+  },
+  "errPairFailed": {
+    "message": "Ulla-Bella kon de koppeling niet voltooien. Probeer het opnieuw."
+  },
+  "errPermissionDenied": {
+    "message": "Toegang tot deze website is geweigerd."
+  },
+  "errPermissionRetry": {
+    "message": "Toegang tot deze website is geweigerd. Je kunt die hier opnieuw verlenen."
+  },
+  "errRelayPermission": {
+    "message": "Toestemming om je Relay te bereiken is geweigerd. De extensie heeft die nodig om verbinding te maken met je server."
+  },
+  "errRelayNotAllowed": {
+    "message": "Dit bestand verwijst naar een onbekende Ulla-Bella-dienst."
+  },
+  "errRequestConflict": {
+    "message": "Dit verzoek botst met een verzoek dat al loopt."
+  },
+  "errSaveAgent": {
+    "message": "De agentkeuze kon niet worden opgeslagen."
+  },
+  "errSaveChoice": {
+    "message": "Deze keuze kon niet worden opgeslagen."
+  },
+  "errSaveLanguage": {
+    "message": "De taalkeuze kon niet worden opgeslagen."
+  },
+  "errServiceUnreachable": {
+    "message": "Ulla-Bella kon de dienst niet bereiken. Controleer je verbinding."
+  },
+  "errSiteUnavailable": {
+    "message": "Deze website is niet beschikbaar."
+  },
+  "errTimeout": {
+    "message": "Ulla-Bella wachtte te lang op een resultaat."
+  },
+  "errToolNotSetUp": {
+    "message": "Het hulpmiddel om de website te bewerken is nog niet ingesteld."
+  },
+  "errUnexpected": {
+    "message": "Ulla-Bella kreeg een onverwachte fout ($CODE$)",
+    "placeholders": {
+      "code": {
+        "content": "$1"
+      }
+    }
+  },
+  "errUnexpectedNoCode": {
+    "message": "Ulla-Bella kreeg een onverwachte fout"
+  },
+  "errorPrefix": {
+    "message": "Fout: $MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "extDescription": {
+    "message": "Wijs een element op je website aan en vertel Ulla-Bella wat er moet veranderen."
+  },
+  "extName": {
+    "message": "Ulla-Bella"
+  },
+  "introHelp": {
+    "message": "Beschrijf het doel en alles wat voor elke wijziging geldt. Markeer daarna de details op de pagina."
+  },
+  "introQuestion": {
+    "message": "Wat wil je deze keer doen?"
+  },
+  "introSkip": {
+    "message": "Overslaan"
+  },
+  "introSkipped": {
+    "message": "Beschrijving overgeslagen — je kunt er altijd een toevoegen in het paneel."
+  },
+  "introStart": {
+    "message": "Begin met aantekenen"
+  },
+  "introTitle": {
+    "message": "Sessiebeschrijving"
+  },
+  "markerAria": {
+    "message": "Aantekening $NUMBER$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "markerAriaWithText": {
+    "message": "Aantekening $NUMBER$: $TEXT$",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      },
+      "text": {
+        "content": "$2"
+      }
+    }
+  },
+  "markerLost": {
+    "message": "Element staat niet meer op de pagina"
+  },
+  "markerViewAnnotation": {
+    "message": "Aantekening $NUMBER$ bekijken",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "markerViewResult": {
+    "message": "Resultaat $NUMBER$ bekijken",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelAddDescription": {
+    "message": "Beschrijving toevoegen"
+  },
+  "panelAddToQueue": {
+    "message": "Aan lijst toevoegen"
+  },
+  "panelCancel": {
+    "message": "Annuleren"
+  },
+  "panelClearConfirm": {
+    "message": "Nogmaals klikken om te wissen"
+  },
+  "panelClearSession": {
+    "message": "Sessie wissen"
+  },
+  "panelClearTitle": {
+    "message": "Deze sessie wissen: $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelDismiss": {
+    "message": "Sluiten"
+  },
+  "panelEditDescription": {
+    "message": "Beschrijving bewerken"
+  },
+  "panelExitAria": {
+    "message": "Annotatiemodus verlaten"
+  },
+  "panelInputPlaceholder": {
+    "message": "Beschrijf de wijziging…"
+  },
+  "panelNoDescription": {
+    "message": "Nog geen sessiebeschrijving."
+  },
+  "panelReaddIt": {
+    "message": "Opnieuw toevoegen"
+  },
+  "panelReaddThem": {
+    "message": "Opnieuw toevoegen"
+  },
+  "panelRemoveAria": {
+    "message": "Aantekening $NUMBER$ uit deze sessie verwijderen",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "panelRemoveTitle": {
+    "message": "Deze aantekening uit de sessie verwijderen"
+  },
+  "panelRetry": {
+    "message": "Opnieuw proberen"
+  },
+  "panelSave": {
+    "message": "Opslaan"
+  },
+  "panelSaveDescription": {
+    "message": "Beschrijving opslaan"
+  },
+  "panelSendAll": {
+    "message": "Alles verzenden"
+  },
+  "panelSessionDescription": {
+    "message": "Sessiebeschrijving"
+  },
+  "panelSessionLabel": {
+    "message": "Sessie · $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupAddSite": {
+    "message": "Site toevoegen"
+  },
+  "popupAdding": {
+    "message": "Toevoegen…"
+  },
+  "popupAgentAutomatic": {
+    "message": "Automatisch (Relay kiest)"
+  },
+  "popupAgentLabel": {
+    "message": "Agent"
+  },
+  "popupAmbiguousHint": {
+    "message": "Kies bij welke verbinding deze pagina hoort."
+  },
+  "popupAmbiguousTitle": {
+    "message": "Deze pagina is meer dan eens verbonden"
+  },
+  "popupChecking": {
+    "message": "Controleren…"
+  },
+  "popupConnectionChoiceLabel": {
+    "message": "Deze pagina wordt door meer dan één verbinding bediend"
+  },
+  "popupConnectionVia": {
+    "message": "$ORIGIN$ · via $RELAY$",
+    "placeholders": {
+      "origin": {
+        "content": "$1"
+      },
+      "relay": {
+        "content": "$2"
+      }
+    }
+  },
+  "popupConnectionsTitle": {
+    "message": "Verbindingen"
+  },
+  "popupDisconnect": {
+    "message": "Verbinding verbreken"
+  },
+  "popupDisconnectConfirm": {
+    "message": "Nogmaals klikken om te verbreken"
+  },
+  "popupDisconnectNote": {
+    "message": "Als je de verbinding verbreekt, vervalt de machtiging van deze browser voor die site. De lokale sessies blijven op dit apparaat staan en worden niet verwijderd — gebruik $CLEAR$ in de editor om de inhoud van een sessie te verwijderen. Andere sites blijven ongewijzigd.",
+    "placeholders": {
+      "clear": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupEmptyConnections": {
+    "message": "Nog geen sites verbonden. Voeg er een toe met een .ullabella-bestand."
+  },
+  "popupGrantAccess": {
+    "message": "Toegang verlenen"
+  },
+  "popupNoPage": {
+    "message": "Geen pagina om te bewerken"
+  },
+  "popupNotConnected": {
+    "message": "Deze pagina is niet verbonden"
+  },
+  "popupNotConnectedHint": {
+    "message": "Voeg de site toe via $SETTINGS$ om hem te kunnen bewerken.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupPermissionHint": {
+    "message": "Toegang tot deze website is nog niet verleend."
+  },
+  "popupSettingsButton": {
+    "message": "Instellingen"
+  },
+  "popupStartEditing": {
+    "message": "Begin met bewerken"
+  },
+  "progressActivity": {
+    "message": "Activiteit: $LABEL$",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressActivityUnavailable": {
+    "message": "Activiteit van de agent niet beschikbaar"
+  },
+  "progressElapsed": {
+    "message": "Verstreken: $DURATION$",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressLastActivity": {
+    "message": "Laatste agentactiviteit: $AGO$",
+    "placeholders": {
+      "ago": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressLastChecked": {
+    "message": "Laatst gecontroleerd: $AGO$",
+    "placeholders": {
+      "ago": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressPaused": {
+    "message": "Controle gepauzeerd — wordt hervat"
+  },
+  "progressSending": {
+    "message": "Verzenden naar Hermes…"
+  },
+  "progressSubmitted_one": {
+    "message": "$COUNT$ aantekening verzonden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressSubmitted_other": {
+    "message": "$COUNT$ aantekeningen verzonden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "progressWaitingApproval": {
+    "message": "Wacht op goedkeuring…"
+  },
+  "progressWorking": {
+    "message": "Hermes is bezig…"
+  },
+  "resultDone": {
+    "message": "Klaar"
+  },
+  "resultDoneSummary": {
+    "message": "Klaar — $SUMMARY$",
+    "placeholders": {
+      "summary": {
+        "content": "$1"
+      }
+    }
+  },
+  "resultFailed": {
+    "message": "Mislukt"
+  },
+  "resultProcessing": {
+    "message": "Wordt verwerkt…"
+  },
+  "resultUnknown": {
+    "message": "Resultaat onbekend"
+  },
+  "rollupAllDone": {
+    "message": "$DONE$ van $TOTAL$ voltooid",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "rollupPartDone": {
+    "message": "$COUNT$ voltooid",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartFailed": {
+    "message": "$COUNT$ mislukt",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartUnknown_one": {
+    "message": "$COUNT$ resultaat onbekend",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupPartUnknown_other": {
+    "message": "$COUNT$ resultaten onbekend",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupUnavailable_one": {
+    "message": "Resultaten niet beschikbaar voor $COUNT$ aantekening",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "rollupUnavailable_other": {
+    "message": "Resultaten niet beschikbaar voor $COUNT$ aantekeningen",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictDesc": {
+    "message": "Deze sessie is in een ander tabblad gewist, dus je sessiebeschrijving is niet opgeslagen. Er wordt niets automatisch teruggezet."
+  },
+  "saveConflictDescMany": {
+    "message": "Deze sessie is in een ander tabblad gewist, dus je sessiebeschrijving en $COUNT$ aantekeningen hier zijn niet opgeslagen. Er wordt niets automatisch teruggezet.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictDescOne": {
+    "message": "Deze sessie is in een ander tabblad gewist, dus je sessiebeschrijving en één aantekening hier zijn niet opgeslagen. Er wordt niets automatisch teruggezet."
+  },
+  "saveConflictGeneric": {
+    "message": "Deze sessie is in een ander tabblad gewist, dus je wijziging is niet opgeslagen. Er wordt niets automatisch teruggezet."
+  },
+  "saveConflictMany": {
+    "message": "Deze sessie is in een ander tabblad gewist, dus $COUNT$ aantekeningen hier zijn niet opgeslagen. Er wordt niets automatisch teruggezet.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "saveConflictOne": {
+    "message": "Deze sessie is in een ander tabblad gewist, dus één aantekening hier is niet opgeslagen. Er wordt niets automatisch teruggezet."
+  },
+  "saveUnsaved": {
+    "message": "Deze wijziging is nog niet opgeslagen."
+  },
+  "settingsLanguage": {
+    "message": "Taal"
+  },
+  "settingsLanguageAuto": {
+    "message": "Automatisch ($LANGUAGE$)",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
+  },
+  "settingsLanguageNote": {
+    "message": "Deze keuze geldt voor de eigen interface van Ulla-Bella. De naam van de extensie en het menu-item in Chrome volgen de browsertaal."
+  },
+  "statusClearConfirm": {
+    "message": "Nogmaals klikken om deze sessie te wissen: $SESSION$",
+    "placeholders": {
+      "session": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusCleared": {
+    "message": "Sessie gewist."
+  },
+  "statusClearedRunning": {
+    "message": "Sessie gewist. Het al verzonden verzoek loopt op de achtergrond door; het resultaat wordt weggegooid."
+  },
+  "statusDeletedRunning": {
+    "message": "Uit deze sessie verwijderd. Het al verzonden verzoek loopt door — hier verwijderen annuleert het niet."
+  },
+  "statusNoAnnotations": {
+    "message": "Geen aantekeningen meer in deze sessie."
+  },
+  "statusQueueFull": {
+    "message": "Lijst is vol ($COUNT$ van $MAX$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "statusResuming": {
+    "message": "Hervatten…"
+  },
+  "statusSending_one": {
+    "message": "$COUNT$ aantekening verzenden…",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusSending_other": {
+    "message": "$COUNT$ aantekeningen verzenden…",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toolbarDone": {
+    "message": "Ulla-Bella: taak voltooid"
+  },
+  "toolbarFailed": {
+    "message": "Ulla-Bella: taak mislukt"
+  },
+  "toolbarIdle": {
+    "message": "Ulla-Bella"
+  },
+  "toolbarPaused": {
+    "message": "Ulla-Bella: controle gepauzeerd (wordt hervat)"
+  },
+  "toolbarSending": {
+    "message": "Ulla-Bella: verzenden naar Hermes…"
+  },
+  "toolbarUncertain": {
+    "message": "Ulla-Bella: resultaat onzeker — controleer de pagina"
+  },
+  "toolbarWorking": {
+    "message": "Ulla-Bella: Hermes is bezig…"
+  }
+}

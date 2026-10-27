@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1",
+  "messageType": "job",
+  "id": "msg_5f8ba335a098477e",
+  "timestamp": "2026-10-07T12:02:34.338Z",
+  "payload": {
+    "jobId": "job_bce0223e37d8490d",
+    "siteId": "site_01j7x9k2m",
+    "deviceId": "dev_01j7xa1b3",
+    "createdAt": "2026-10-07T12:02:34.337Z",
+    "annotations": [
+      {
+        "annotationId": "ann_63f9e4300daa4e83",
+        "instruction": "Change this heading to Our Services",
+        "target": {
+          "url": "http://site.example.com:8080/services",
+          "pageTitle": "Tjänster — Example Test",
+          "elementType": "h1",
+          "visibleText": "Tjänster",
+          "selector": "h1",
+          "domPath": "html > body[1] > header[1] > h1[1]",
+          "rect": {
+            "x": 0,
+            "y": 120,
+            "width": 640,
+            "height": 48
+          }
+        },
+        "context": {
+          "nearbyText": "Vi hjälper företag att växa."
+        }
+      }
+    ]
+  }
+}

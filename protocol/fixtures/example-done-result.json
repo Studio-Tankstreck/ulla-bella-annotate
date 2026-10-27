@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "messageType": "result",
+  "id": "msg_01j7xb9d7",
+  "timestamp": "2026-10-07T08:00:12Z",
+  "payload": {
+    "jobId": "job_01j7xb4c5",
+    "status": "done",
+    "summary": "H1 now reads 'Our Services'",
+    "verification": { "status": "passed", "summary": "H1 now reads 'Our Services'" }
+  }
+}

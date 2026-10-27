@@ -1,0 +1,40 @@
+# Ulla-Bella Adapter configuration (Task 13).
+# This file holds NO secrets. Every secret is referenced by the NAME of an
+# environment variable (loaded from /etc/ulla-bella/adapter.env by systemd);
+# the value is read from the process environment at runtime and never from here.
+
+relay:
+  # Relay WebSocket endpoint. The Adapter initiates an OUTBOUND connection to
+  # this URL; it never exposes a listener of its own.
+  url: wss://relay.example.com/v1/ws
+
+agent:
+  # Relay-side agent identifier, minted once with:
+  #   relay agent create <id> --name <display>
+  id: agent_XXX
+  # Env var holding the agent credential (see adapter.env). Name only.
+  credential_env: ULLABELLA_AGENT_CREDENTIAL
+
+hermes:
+  # Local Hermes gateway. The /v1 API path is appended automatically (may be
+  # included here or omitted).
+  base_url: http://127.0.0.1:8642
+  model: hermes-agent
+  # Env var holding the Hermes API key. Name only.
+  api_key_env: API_SERVER_KEY
+
+# One entry per Site the Adapter knows how to operate. Authorization (whether
+# this agent may serve a Site) lives in the Relay DB, not here — both must agree.
+sites:
+  - site_id: site_example
+    origin: https://example.com
+    tool:
+      type: yootheme-mcp
+      # MCP base URL (no trailing /mcp).
+      endpoint: https://mcp.example.com/api/index.php/v1/yt-builder-mcp
+      # Env var holding the MCP Bearer token. Name only.
+      token_env: EXAMPLE_YTB_MCP_TOKEN
+      # Optional Host header override for tunneled/noncanonical endpoints.
+      host_header: example.com
+      # Optional YOOtheme MCP client-version floor (defaults to 2.3.1).
+      client_version: "2.3.1"
